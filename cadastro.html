@@ -62,7 +62,21 @@
      <div class="container">
         <h2 style="text-align:center">Cadastro</h2>
         <form>
-        
+            <div class="row text-center">
+                <div class="form group col-sm-12">
+                    <label>Insira sua foto</label><br>
+                    
+                    <div id="img-container">
+                        <img id="preview" src="img/user.jpg">
+                    </div>
+                    
+                 </div>
+            </div>   
+            <div class="row cx">
+                <div class="form group col-12">
+                    <input id="img-input" type="file" name="imagem">
+                </div>
+            </div>
             <h3>Dados de login</h3>
             <div class="row">
                 <div class="form-group col-sm-6">
@@ -165,7 +179,18 @@
       
 
     </div> 
-
+    <script>
+        function readImage() {
+          if (this.files && this.files[0]) {
+            var file = new FileReader();
+            file.onload = function(e) {
+            document.getElementById("preview").src = e.target.result;
+          };       
+      file.readAsDataURL(this.files[0]);
+          }
+        }
+      document.getElementById("img-input").addEventListener("change", readImage, false);
+      </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
