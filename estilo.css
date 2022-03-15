@@ -1,0 +1,24 @@
+.logos{
+	width: 24%;
+	display: inline;
+}
+.fundo{
+	/*background-color:#DCDCDC;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.bloco{
+	padding-left: 20px;
+}
+#corpo {
+	position: relative; 
+  }
+h3 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+}
+#botao{
+	padding-top: 15px;
+}
+
