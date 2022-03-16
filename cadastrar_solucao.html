@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="barra-navegacao">
 
           <ul class="nav navbar-nav navbar-right">
-            <li> <a href="home.html">MINHA EQUIPE</a> </li>
+            <li> <a href="home_prof.html">MINHA EQUIPE</a> </li>
             <li> <a href="inserir_demanda.html">INSERIR DEMANDAS</a> </li>
             <li> <a href="cadastrar_solucao.html">CADASTRO DE SOLUÇÃO</a> </li>
             <li> <a href="#">SAIR</a> </li>
@@ -57,52 +57,46 @@
 
       </div>
     </nav>
-    
-   	
-     <div class="container">
-   		
-      <div class="row text-center">
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
+    <!-- conteúdo da página-->
+   	 <div class="container">
+   		<h3>Cadastrar Solução</h3>
+           <form>
+                <div class="form-group col-sm-12">
+                    <label for="nome">Nome da Solucao</label>
+                    <input type="text" id="nome" name="nome" class="form-control">
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="just">Justificativa do projeto</label>
+                    <textarea class="form-control" rows="5" id="just" name="just"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="obj">Objetivos</label>
+                    <textarea class="form-control" rows="5" id="obj" name="obj"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="desenv">Desenvolvimento</label>
+                    <textarea class="form-control" rows="5" id="desenv" name="desenv"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="vtec">Viabilidade Técnica</label>
+                    <textarea class="form-control" rows="5" id="vtec" name="vtec"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="vec">Viabilidade Econômica</label>
+                    <textarea class="form-control" rows="5" id="vtec" name="vec"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="result">Resultado e Conclusão</label>
+                    <textarea class="form-control" rows="5" id="result" name="result"></textarea>
+                </div>
+                <button class="btn btn-primary">Salvar Solução</button>
+                <button class="btn btn-danger">Limpar</button>
+            </form>
       </div>
-      <div class="row text-center">
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <img src="" class="img-circle">
-          <div>
-            <p></p>
-          </div>
-        </div>
-      </div>
+         
+
+     
+        
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
